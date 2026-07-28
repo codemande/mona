@@ -1,0 +1,161 @@
+.filterBar {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  align-items: flex-end;
+}
+
+.mapSection {
+  background-color: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  height: 280px;
+  margin-bottom: var(--space-8);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(var(--color-border-dark) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.mapMarker {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.storeCard {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.storeImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: var(--color-bg-soft);
+}
+
+.storeContent {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.storeName {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.addressRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hoursRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.servicesTagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--space-6);
+  margin-top: auto;
+}
+
+.tag {
+  background-color: var(--color-bg-blue);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.storeActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-16) var(--space-6);
+  background-color: var(--color-bg-soft);
+  border: 1px dashed var(--color-border-dark);
+  border-radius: var(--radius-sm);
+}
+
+.emptyState h3 {
+  margin-bottom: var(--space-2);
+}
+
+.emptyState p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .filterBar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .filterBar {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

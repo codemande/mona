@@ -1,0 +1,47 @@
+.ctaBand {
+  background: var(--gradient-hero);
+  color: #ffffff;
+  padding: var(--space-16) var(--space-6);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.ctaBand h2 {
+  color: #ffffff;
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+  margin-bottom: var(--space-4);
+  position: relative;
+  z-index: 2;
+}
+
+.ctaBand p {
+  color: #E2E8F0;
+  font-size: var(--text-lg);
+  max-width: 680px;
+  margin: 0 auto var(--space-8) auto;
+  position: relative;
+  z-index: 2;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.glowPattern {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 182, 255, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}

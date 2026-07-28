@@ -1,0 +1,151 @@
+.calculatorCard {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brandGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.brandBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-soft);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.brandBtn:hover {
+  border-color: var(--color-cyan);
+  background-color: #ffffff;
+}
+
+.brandActive {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-blue);
+  color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.stepTitle {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.resultCard {
+  margin-top: var(--space-6);
+  padding: var(--space-6);
+  background: var(--gradient-accent);
+  border: 1px solid rgba(0, 74, 173, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+.priceHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.priceLabel {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.priceValue {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.priceSubtext {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.includesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.includeItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.checkIcon {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.noticeBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px dashed var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-navy);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .brandGrid {
+    grid-template-columns: 1fr;
+  }
+  .includesList {
+    grid-template-columns: 1fr;
+  }
+  .calculatorCard {
+    padding: var(--space-4);
+  }
+}
